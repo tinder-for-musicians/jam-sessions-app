@@ -1,0 +1,12 @@
+{
+  "name": "jam-sessions-app",
+  "displayName": "jam-sessions-app",
+  "expo": {
+    "name": "jam-sessions-app",
+    "slug": "jam-sessions-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
