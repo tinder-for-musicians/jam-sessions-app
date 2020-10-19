@@ -13,13 +13,11 @@ const Landing = () => {
         onPress={() => Actions.test1()}>
         Landing Page
       </Text> */}
-      <form className='landing-view'>
-        <section className='auth-container'>
-            <h1 className='logo'>
+        <View>
+            <Text style={styles.welcome}>
                 Jam Sessions
-            </h1>
-        </section>
-      </form>
+            </Text>
+        </View>
     </View>
   );
 }
