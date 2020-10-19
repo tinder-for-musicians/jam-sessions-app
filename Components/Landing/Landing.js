@@ -6,14 +6,20 @@ import {
 } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 
-
-const TestRouting2 = () => {
+const Landing = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}
-      onPress={() => Actions.loginPage()}>
-        Gray Screen
-      </Text>
+      {/* <Text style={styles.welcome}
+        onPress={() => Actions.test1()}>
+        Landing Page
+      </Text> */}
+      <form className='landing-view'>
+        <section className='auth-container'>
+            <h1 className='logo'>
+                Jam Sessions
+            </h1>
+        </section>
+      </form>
     </View>
   );
 }
@@ -23,7 +29,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#a3a3a3',
+    backgroundColor: '#bb0000',
   },
   welcome: {
     fontSize: 20,
@@ -33,4 +39,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TestRouting2;
+export default Landing;
