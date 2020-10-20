@@ -12,12 +12,14 @@ export default function App() {
       <Scene key='root'>
         <Scene key='loginPage'
           component={Landing}
+          hideNavBar={true}
           title='loginPage'
           initial
         />
         <Scene key='test1'
           component={TestRouting}
           title='test1'  
+          
         />
         <Scene key='test2'
           component={TestRouting2}
