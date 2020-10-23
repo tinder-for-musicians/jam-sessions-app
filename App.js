@@ -5,6 +5,7 @@ import {Router, Scene} from 'react-native-router-flux';
 import TestRouting from './Components/TestRouting';
 import TestRouting2 from './Components/TestRouting2';
 import Landing from './Components/Landing/Landing';
+import Register from './Components/Register/Register';
 
 export default function App() {
   return (
@@ -15,6 +16,11 @@ export default function App() {
           hideNavBar={true}
           title='loginPage'
           initial
+        />
+        <Scene key='registerPage'
+          component={Register}
+          hideNavBar={true}
+          title='registerPage'
         />
         <Scene key='test1'
           component={TestRouting}
