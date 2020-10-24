@@ -6,7 +6,6 @@ import {
   ImageBackground,
   TextInput,
   TouchableOpacity,
-  SafeAreaView
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
@@ -16,10 +15,6 @@ const Landing = () => {
   return (
     <View style={styles.container}>
       <ImageBackground source={backgroundImage} style={styles.background}>
-        {/* <Text style={styles.welcome}
-        onPress={() => Actions.test1()}>
-        Landing Page
-      </Text> */}
         <View style={styles.loginContainer}>
           <Text style={styles.title}>
             Jam Sessions
@@ -28,7 +23,7 @@ const Landing = () => {
           <TextInput style={styles.authInput} placeholder='Password' />
           <TouchableOpacity style={styles.loginButton}
             activeOpacity={0.8}
-            onPress={() => Actions.test1()}>
+            onPress={() => Actions.homePage()}>
             <Text style={styles.loginText}>Login</Text>
           </TouchableOpacity>
           <Text style={styles.registerText} onPress={() => Actions.registerPage()}>Don't have an account? Register Here</Text>
